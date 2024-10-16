@@ -3,6 +3,8 @@ import check from '@/assets/icons/check.svg'
 import contact from '@/assets/icons/contact.svg'
 import home from '@/assets/icons/home.svg'
 import logo from '@/assets/img/RASTREAMING.png'
+
+
 </script>
 
 <template>
@@ -17,19 +19,27 @@ import logo from '@/assets/img/RASTREAMING.png'
           <li class="navbar-item scale">
             <img class="navbar-item-img" :src="home" alt="home" />
             <router-link to="/" class="link">
-              <span class="navbar-item-span ubuntu-bold">INICIO</span>
+              <span class="navbar-item-span ubuntu-bold">Inicio</span>
             </router-link>
           </li>
-          <li class="navbar-item scale">
-            <img class="navbar-item-img" :src="check" alt="check.svg" />
-            <router-link class="link" to="/verify">
-              <span class="navbar-item-span ubuntu-bold">VERIFICADOR</span></router-link
-            >
-          </li>
+
           <li class="navbar-item scale">
             <img class="navbar-item-img" :src="contact" alt="contact.svg" />
-            <span class="navbar-item-span ubuntu-bold">CONTACTO</span>
+            <router-link to="/Terms" class="link">
+            <span class="navbar-item-span ubuntu-bold">Terminos</span></router-link>
           </li>
+
+          <li class="navbar-item scale">
+            <img class="navbar-item-img" :src="contact" alt="contact.svg" />
+            <router-link class="link" to="/login">
+              <span class="navbar-item-span ubuntu-bold">Login</span></router-link
+            >
+          </li>
+
+<!--           <li class="navbar-item scale">
+            <img class="navbar-item-img" :src="contact" alt="contact.svg" />
+            <span class="navbar-item-span ubuntu-bold">CONTACTO</span>
+          </li> -->
           <li class="navbar-item scale">
             <button class="navbar-btn shadow">
               <span class="navbar-item-span ubuntu-bold">LISTA DE BOLETOS</span>

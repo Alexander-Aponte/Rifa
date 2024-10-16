@@ -6,7 +6,7 @@
       414-584-7093
     </p>
     <p>
-      <a href="/terms">Términos y Condiciones</a> | <a href="/privacy">Política de Privacidad</a>
+      <a href="/Terms">Términos y Condiciones</a> | <a href="/privacy">Política de Privacidad</a>
     </p>
   </footer>
 </template>

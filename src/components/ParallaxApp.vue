@@ -8,7 +8,7 @@ import Accordion from '../components/Accordion.vue';
 
 const title = ref('SAMSUNG Galaxy A15 Dual SIM <br>6 GB Ram y 128 GB de Interna')
 // const ticketValue = ref(2)
-const dateReffles = ref('12/10/2024')
+const dateReffles = ref('13/10/2024')
 const time = ref('7:15:00 PM')
 const numbersDraw = ref('100')
 </script>
@@ -23,7 +23,7 @@ const numbersDraw = ref('100')
         <div class="parallax-text-container-calendar-clock">
           <div class="parallax-text-calendar">
             <img class="parallax-ico" :src="calendar" alt="calendar.svg" />
-            <span>12 Octubre 2024</span>
+            <span>13 Octubre 2024</span>
           </div>
           <div class="parallax-text-clock">
             <img class="parallax-ico" :src="clock" alt="clock.svg" />

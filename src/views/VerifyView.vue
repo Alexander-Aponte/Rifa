@@ -38,21 +38,21 @@ const formatDateTime = (date: string) => {
 <template>
   <div class="container-app">
     <div class="scroll">
-      <div class="cont-verify shadow transition" v-for="customer in customers" :key="customer.id">
+      <div class="cont-verify shadow transition" v-for="(customer, index) in customers" :key="customer.id">
         <div class="verify">
-          {{ customer.name }}
+          {{ index + 1 }}. <br>  {{ customer.name }}
         </div>
         <div class="verify">
-          {{ customer.lastname }}
+           {{ customer.lastname }}
         </div>
         <div class="verify">
-          {{ customer.email }}
+           {{ customer.email }}
         </div>
         <div class="verify">
-          {{ customer.phone }}
+           {{ customer.phone }}
         </div>
         <div class="verify">
-          {{ formatDateTime(customer.createdAt) }}
+           {{ formatDateTime(customer.createdAt) }}
         </div>
         <div class="btn-prod">
           <button @click="examine(customer.paymentReference)" class="btn ubuntu-bold shadow">
@@ -63,6 +63,7 @@ const formatDateTime = (date: string) => {
     </div>
   </div>
 </template>
+
 
 <style scoped>
 .container-app {
