@@ -15,7 +15,7 @@ export default {
   display: flex;
   flex-direction: column;
   width: 200px;
-  background-color: #f8f9fa;
+  background-color: #37526e7c;
   padding: 10px;
 }
 .nav-item {

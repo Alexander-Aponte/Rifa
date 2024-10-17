@@ -24,7 +24,7 @@ import logo from '@/assets/img/RASTREAMING.png'
           </li>
 
           <li class="navbar-item scale">
-            <img class="navbar-item-img" :src="contact" alt="contact.svg" />
+            <img class="navbar-item-img" :src="check" alt="check.svg" />
             <router-link to="/Terms" class="link">
             <span class="navbar-item-span ubuntu-bold">Terminos</span></router-link>
           </li>

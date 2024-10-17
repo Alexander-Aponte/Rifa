@@ -33,6 +33,7 @@ const customer = ref({ createdAt: '2024-10-07T15:59:43Z' })
 const formatDateTime = (date: string) => {
   return format(new Date(date), 'dd/MM/yyyy HH:mm:ss')
 }
+
 </script>
 
 <template>
@@ -60,6 +61,7 @@ const formatDateTime = (date: string) => {
           </button>
         </div>
       </div>
+      <button class="back-button" @click="$router.go(-1)">Regresar</button>
     </div>
   </div>
 </template>
@@ -97,6 +99,22 @@ const formatDateTime = (date: string) => {
   color: var(--white-app);
   background-color: var(--secundary-app);
 }
+
+.back-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .back-button:hover {
+    background-color: #218838;
+  }
 
 .btn:hover {
   cursor: pointer;

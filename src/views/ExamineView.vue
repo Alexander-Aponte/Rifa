@@ -90,7 +90,7 @@ onMounted(async () => {
       <button class="boton-regresar" @click="$router.go(-1)">Regresar</button>
 
       <div class="payment-image">
-        <h2 class="subtitle">COMPROBANTE DE PAGO</h2>
+        <h3 class="subtitle">COMPROB. DE PAGO</h3>
         <img class="img" :src="img" alt="payment" />
       </div>
     </div>
@@ -116,7 +116,7 @@ onMounted(async () => {
 
 .img {
   height: 30rem;
-  width: 15rem;
+  width: 25rem;
 }
 
 .subtitle {
@@ -189,7 +189,7 @@ onMounted(async () => {
   background-color: #ff1a1a;
 }
 
-.boton-regresar{
+.boton-regresar {
   background-color: #06c951;
   color: white;
   border: none;
