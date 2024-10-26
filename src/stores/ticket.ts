@@ -15,7 +15,7 @@ export const useTicketStore = defineStore('ticket', {
       unit: [] as Ticket[],
       selected: [] as number[],
       price: 0,
-      rate: 70
+      rate: 100
     }
   },
   getters: {
@@ -32,7 +32,7 @@ export const useTicketStore = defineStore('ticket', {
     },
     add(ticket: number) {
       if (!this.selected.includes(ticket)) {
-        this.selected.push(ticket);
+        this.selected.push(ticket)
       }
     },
     delete(id: number) {

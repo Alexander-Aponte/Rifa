@@ -34,7 +34,7 @@ const captureFile = ref<File>()
 const isActive = ref(false)
 const validate = () => {
   console.log(ticket.selected.length)
-  if (ticket.selected.length <= 0) {
+  if (ticket.selected.length <= 1) {
     return true
   } else {
     return false
@@ -45,7 +45,8 @@ const validate = () => {
 const submit = async (e: Event) => {
   e.preventDefault()
   if (validate()) {
-    alert('SELECIONE LOS TICKETS QUE SEA COMPRAR')
+    //alert('SELECIONE LOS TICKETS QUE SEA COMPRAR<br> Minimo 2 Tickets')
+    alert('SELECIONE LOS TICKETS QUE SEA COMPRAR\nMINIMO 2 TICKETS')
   } else {
     const formData = new FormData(e.target as HTMLFormElement)
     formData.append('image', captureFile.value as File)
@@ -140,7 +141,6 @@ const generatePaymetReference = () => {
             required
           />
           <span v-if="errors.email">{{ errors.email }}</span>
-
           <label class="phone ubuntu-bold" for="phone">TELÉFONO: </label>
           <input
             v-model="userPhone"
@@ -151,14 +151,12 @@ const generatePaymetReference = () => {
             required
           />
         </div>
-
         <div class="cap-paymet separator ubuntu-bold">
           <label :class="{ 'active-class': isActive, 'inactive-class': !isActive }" for="file"
             >SOPORTE DE PAGO</label
           >
           <input @change="addPaymet" type="file" id="file" required />
         </div>
-
         <!-- <button @click="addDatePaymet" type="button">add-data-paymet</button> -->
         <button class="btn scale shadow separator ubuntu-bold">ENVIAR PAGO</button>
       </form>

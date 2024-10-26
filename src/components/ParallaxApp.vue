@@ -3,14 +3,14 @@ import { ref } from 'vue'
 import calendar from '@/assets/icons/calendar.svg'
 import clock from '@/assets/icons/clock.svg'
 //import moto from '@/assets/img/IMG_4361.png'
-import phone from '@/assets/img/a15phone.png'
-import Accordion from '../components/Accordion.vue';
+import phone from '@/assets/img/moto1.png'
+import Accordion from '../components/Accordion.vue'
 
 const title = ref('SAMSUNG Galaxy A15 Dual SIM <br>6 GB Ram y 128 GB de Interna')
 // const ticketValue = ref(2)
 const dateReffles = ref('13/10/2024')
 const time = ref('7:15:00 PM')
-const numbersDraw = ref('100')
+const numbersDraw = ref('1000')
 </script>
 
 <template>
@@ -20,7 +20,7 @@ const numbersDraw = ref('100')
         <img class="scale" :src="phone" alt="parallaxVuetify" />
       </div>
       <div class="parallax-text">
-        <div class="parallax-text-container-calendar-clock">
+        <!-- <div class="parallax-text-container-calendar-clock">
           <div class="parallax-text-calendar">
             <img class="parallax-ico" :src="calendar" alt="calendar.svg" />
             <span>13 Octubre 2024</span>
@@ -29,24 +29,29 @@ const numbersDraw = ref('100')
             <img class="parallax-ico" :src="clock" alt="clock.svg" />
             <span> 7:15 PM</span>
           </div>
-        </div>
-        <h1 class="parallax-text-title" v-html="title"></h1>
+        </div> 
+        <h1 class="parallax-text-title" v-html="title"></h1>-->
         <div class="parallax-text-parrafo">
-          <p class="parallax-text-parrafo-p">
-            <strong>Valor del Ticket:</strong> 70 Bs. 
-          </p>
-          <Accordion />
+          <p class="parallax-text-parrafo-p"><strong>Valor del Ticket:</strong> 100 Bs.</p>
+
           <p class="parallax-text-parrafo-p">
             <strong>Fecha del Sorteo:</strong> {{ dateReffles }}
           </p>
-          <p class="parallax-text-parrafo-p"><strong>Hora:</strong> {{ time }} <br><strong>(Resultado Loteria EL Terminalito)</strong></p>
+          <p class="parallax-text-parrafo-p">
+            <strong>Hora:</strong> {{ time }} <br /><strong
+              >(Resultado Loteria EL Terminalito)</strong
+            >
+          </p>
+          <Accordion />
           <p class="parallax-text-parrafo-p">
             <strong>Números a Sortear:</strong> {{ numbersDraw }}
           </p>
-          <p class="parallax-text-parrafo-p">Participa y Gana💰🤑</p>
-        </div>
+          <p class="parallax-text-parrafo-p">1er lugar: MOTO TORO JAGUAR 2024 0km</p>
+          <p class="parallax-text-parrafo-p">2do lugar: 500$ BCV</p>
+          <p class="parallax-text-parrafo-p">3er lugar: 150$ BCV</p>
 
-        
+          <p class="parallax-text-parrafo-p"><strong>Participa y Gana💰🤑</strong></p>
+        </div>
       </div>
     </div>
   </div>
@@ -94,7 +99,7 @@ const numbersDraw = ref('100')
   flex-direction: column;
   align-items: left;
   margin-top: 1rem;
-  text-align:left
+  text-align: left;
 }
 
 .parallax-text-parrafo-p {

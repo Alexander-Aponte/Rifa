@@ -19,6 +19,7 @@ const fSubstarction = () => {
 <template>
   <div class="container">
     <h1 class="title">LISTA DE TICKETS</h1>
+    <h2 class="title">Minimo 2 Tickets por Persona</h2>
     <div class="counter">
       <button @click="fSubstarction" class="btn substarction scale">
         <img :src="substarction" alt="substarction" />
@@ -66,11 +67,11 @@ const fSubstarction = () => {
 }
 
 .plus {
-  background-color: var(--gray-app);
+  background-color: rgba(24, 55, 192, 0.863);
 }
 
 .substarction {
-  background-color: var(--gray-app);
+  background-color: rgba(24, 55, 192, 0.863);
 }
 
 .filter {
