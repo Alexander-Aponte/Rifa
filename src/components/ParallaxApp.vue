@@ -8,8 +8,8 @@ import Accordion from '../components/Accordion.vue'
 
 const title = ref('SAMSUNG Galaxy A15 Dual SIM <br>6 GB Ram y 128 GB de Interna')
 // const ticketValue = ref(2)
-const dateReffles = ref('13/10/2024')
-const time = ref('7:15:00 PM')
+const dateReffles = ref('17/11/2024')
+//const time = ref('7:15:00 PM')
 const numbersDraw = ref('1000')
 </script>
 
@@ -38,19 +38,30 @@ const numbersDraw = ref('1000')
             <strong>Fecha del Sorteo:</strong> {{ dateReffles }}
           </p>
           <p class="parallax-text-parrafo-p">
-            <strong>Hora:</strong> {{ time }} <br /><strong
-              >(Resultado Loteria EL Terminalito)</strong
+            <strong>Hora:</strong> Hora: 1:00PM / 4:00PM / 10:00PM <br /><strong
+              >(Resultado Loteria Triple Gana🎰)</strong
             >
           </p>
           <Accordion />
           <p class="parallax-text-parrafo-p">
             <strong>Números a Sortear:</strong> {{ numbersDraw }}
           </p>
-          <p class="parallax-text-parrafo-p">1er lugar: MOTO TORO JAGUAR 2024 0km</p>
-          <p class="parallax-text-parrafo-p">2do lugar: 500$ BCV</p>
-          <p class="parallax-text-parrafo-p">3er lugar: 150$ BCV</p>
+          <p class="parallax-text-parrafo-p">
+            🥇MOTO TORO JAGUAR 2024 0KM, (1 PREMIO PARA UN GANADOR🤯) 17/11/24 10:00PM🕙
+          </p>
+          <p class="parallax-text-parrafo-p">
+            🥈400$ (1 PREMIO PARA UN GANADOR🤯), 17/11/24 4:00PM🕙
+          </p>
+          <p class="parallax-text-parrafo-p">
+            🥉100$ (1 PREMIO PARA UN GANADOR🤯) 17/11/24 1:00PM🕙
+          </p>
 
-          <p class="parallax-text-parrafo-p"><strong>Participa y Gana💰🤑</strong></p>
+          <p class="parallax-text-parrafo-p">
+            <strong
+              >TODOS LOS RESULTADOS SERÁN TOMADOS DE LA LOTERÍA<br />
+              TRIPLE GANA🎰(EN SUS HORARIOS CORRESPONDIENTES).</strong
+            >
+          </p>
         </div>
       </div>
     </div>
@@ -70,7 +81,7 @@ const numbersDraw = ref('1000')
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 100%;
+  max-width: 79%;
   margin: 0 auto;
 }
 

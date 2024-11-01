@@ -57,7 +57,7 @@ onMounted(async () => {
   margin-block-start: 2rem;
   grid-template-columns: repeat(10, 1fr);
   height: 25rem;
-  inline-size: 80%;
+  inline-size: 79%;
   background-color: var(--gray-app);
   border-radius: 1.5rem;
   overflow: scroll;

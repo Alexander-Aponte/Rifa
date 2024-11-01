@@ -29,7 +29,7 @@ const deleteTicket = (e: Event) => {
   gap: 1rem;
   background-color: var(--gray-app);
   border-radius: 1rem;
-  width: 80%;
+  width: 79%;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -55,7 +55,7 @@ const deleteTicket = (e: Event) => {
 
 @media (max-width: 768px) {
   .container {
-    width: 100%;
+    width: 79%;
     padding: 0.5rem;
   }
 

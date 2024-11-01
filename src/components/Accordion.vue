@@ -20,9 +20,11 @@ export default {
   setup() {
     const activeIndex = ref(null)
     const items = ref([
-      { title: 'Pago Movil Provincial', content: 'C.I.: 27925610, Telf.:0424-4485755, Provincial (0108)' },
-      { title: 'Pago Movil Venezuela', content: 'No Disponible' },
-      
+      {
+        title: 'Pago Movil Provincial',
+        content: 'C.I.: 27925610, Telf.:0424-4485755, Provincial (0108)'
+      },
+      { title: 'Pago USDT', content: 'rosmiarismendi8@gmail.com, (2$ x ticket) ' }
     ])
 
     const toggle = (index) => {
@@ -47,7 +49,7 @@ export default {
   border-bottom: 1px solid #ccc;
 }
 .accordion-header {
-    background-color: rgb(58, 60, 80);
+  background-color: rgb(58, 60, 80);
   padding: 10px;
   cursor: pointer;
 }
